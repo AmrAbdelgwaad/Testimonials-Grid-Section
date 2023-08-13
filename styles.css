@@ -1,0 +1,184 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+
+  --FF-primary: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  font-family: var(--FF-primary);
+  background-color: var(--Light-grayish-blue);
+  font-size: 0.813rem;
+  line-height: 1.384;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+
+/*****multi-use code******/
+
+.card {
+  max-width: 20.438rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+}
+
+.card-bio {
+  display: flex;
+  gap: 1.063rem;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+.cool-border {
+  border: 2px solid hsl(264, 82%, 70%);
+}
+
+.card-title {
+  line-height: 0.813rem;
+  color: var(--White);
+}
+
+span {
+  opacity: 0.5;
+  font-size: 0.688rem;
+}
+
+.main-p {
+  margin-top: 1.125rem;
+
+  color: var(--White);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sub-p {
+  color: var(--Light-gray);
+  margin-top: 2.5rem;
+  opacity: 0.7;
+}
+
+/*******End of multi-use code********/
+
+.daniel-card {
+  background: var(--Moderate-violet) url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right 1.5rem;
+  margin-top: 4.44rem;
+}
+
+.jonathan-card {
+  margin-top: 1.5rem;
+  background: var(--Very-dark-grayish-blue);
+}
+
+.jonathan-sub-p {
+  margin-top: 1rem;
+  color: var(--White);
+}
+
+.jeanette-card {
+  margin-top: 1.5rem;
+  background-color: var(--White);
+}
+
+.grey-card-title {
+  color: var(--Very-dark-grayish-blue);
+}
+
+.main-p-grey {
+  color: var(--Very-dark-grayish-blue);
+}
+
+.sub-p-grey {
+  margin-top: 1rem;
+  color: var(--Very-dark-grayish-blue);
+}
+
+.patric-card {
+  margin-top: 1.5rem;
+  background: var(--Very-dark-blackish-blue);
+}
+
+.light-grey {
+  color: var(--Light-gray);
+}
+.patric-sub-p {
+  margin-top: 1rem;
+}
+
+.kira-card {
+  background-color: var(--White);
+  margin: 1.5rem 0 4.44rem;
+}
+
+/**** Bigger screens ****/
+
+@media (min-width: 75rem) {
+  main {
+    grid-template-areas:
+      "daniel  daniel   jonathan kira"
+      "jeanette patric  patric kira";
+
+    margin: 4.44rem 0;
+    row-gap: 1.5rem;
+  }
+  .card {
+    margin: 0;
+  }
+  .daniel-card {
+    background-position: top right 5rem;
+    grid-area: daniel;
+    max-width: 34rem;
+  }
+  .jonathan-card {
+    max-width: 15.938rem;
+    grid-area: jonathan;
+  }
+
+  .jeanette-card {
+    max-width: 15.938rem;
+    grid-area: jeanette;
+  }
+
+  .patric-card {
+    max-width: 33.75rem;
+    grid-area: patric;
+  }
+
+  .kira-card {
+    max-width: 15.938rem;
+    grid-area: kira;
+  }
+  .sub-p {
+    margin-top: 1rem;
+  }
+}
