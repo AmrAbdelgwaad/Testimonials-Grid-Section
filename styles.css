@@ -35,6 +35,8 @@ body {
 main {
   display: grid;
   place-items: center;
+  row-gap: 1.5rem;
+  margin: 4.44rem 0;
 }
 
 /*****multi-use code******/
@@ -92,11 +94,11 @@ span {
   background: var(--Moderate-violet) url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top right 1.5rem;
-  margin-top: 4.44rem;
+
 }
 
 .jonathan-card {
-  margin-top: 1.5rem;
+
   background: var(--Very-dark-grayish-blue);
 }
 
@@ -106,7 +108,7 @@ span {
 }
 
 .jeanette-card {
-  margin-top: 1.5rem;
+
   background-color: var(--White);
 }
 
@@ -124,7 +126,7 @@ span {
 }
 
 .patric-card {
-  margin-top: 1.5rem;
+
   background: var(--Very-dark-blackish-blue);
 }
 
@@ -137,11 +139,12 @@ span {
 
 .kira-card {
   background-color: var(--White);
-  margin: 1.5rem 0 4.44rem;
+
 }
 
 /**** Bigger screens ****/
 
+/*
 @media (min-width: 75rem) {
   main {
     grid-template-areas:
@@ -182,3 +185,4 @@ span {
     margin-top: 1rem;
   }
 }
+*/
