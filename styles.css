@@ -94,11 +94,9 @@ span {
   background: var(--Moderate-violet) url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: top right 1.5rem;
-
 }
 
 .jonathan-card {
-
   background: var(--Very-dark-grayish-blue);
 }
 
@@ -108,7 +106,6 @@ span {
 }
 
 .jeanette-card {
-
   background-color: var(--White);
 }
 
@@ -126,7 +123,6 @@ span {
 }
 
 .patric-card {
-
   background: var(--Very-dark-blackish-blue);
 }
 
@@ -139,24 +135,18 @@ span {
 
 .kira-card {
   background-color: var(--White);
-
 }
 
 /**** Bigger screens ****/
-
-/*
 @media (min-width: 75rem) {
   main {
     grid-template-areas:
       "daniel  daniel   jonathan kira"
       "jeanette patric  patric kira";
+    margin: 4.44rem 5rem;
+    column-gap: 1.8rem;
+  }
 
-    margin: 4.44rem 0;
-    row-gap: 1.5rem;
-  }
-  .card {
-    margin: 0;
-  }
   .daniel-card {
     background-position: top right 5rem;
     grid-area: daniel;
@@ -185,4 +175,10 @@ span {
     margin-top: 1rem;
   }
 }
-*/
+
+@media (min-width: 90rem) {
+  main {
+    margin: 10.25rem 10.31rem;
+    column-gap: 1.8rem;
+  }
+}
